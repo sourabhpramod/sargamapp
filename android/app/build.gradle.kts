@@ -8,8 +8,8 @@ plugins {
 
 android {
     namespace = "com.example.sargamapp"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 34 // Explicit version instead of flutter.compileSdkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -25,8 +25,8 @@ android {
         applicationId = "com.example.sargamapp"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 21 // Explicit version
+        targetSdk = 34 // Explicit version
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -43,6 +43,3 @@ android {
 flutter {
     source = "../.."
 }
-
-
-

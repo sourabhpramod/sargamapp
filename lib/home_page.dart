@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'login_page.dart'; // Import your LoginPage
-
 // Placeholder pages for navigation
 import 'scan_ticket_page.dart';
 import 'export_participant_info_page.dart';
@@ -134,71 +133,6 @@ class HomePage extends StatelessWidget {
         ),
         elevation: 5, // Subtle shadow
       ),
-    );
-  }
-}
-
-// --- Placeholder Pages (Add these as new files in your project) ---
-
-// scan_ticket_page.dart
-class ScanTicketPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Scan Ticket", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.deepOrange,
-        iconTheme: const IconThemeData(color: Colors.white), // Back button color
-      ),
-      body: const Center(
-        child: Text(
-          "Scan Ticket functionality will go here!",
-          style: TextStyle(fontSize: 22, color: Colors.deepOrange),
-        ),
-      ),
-      backgroundColor: Colors.orange[50],
-    );
-  }
-}
-
-// export_participant_info_page.dart
-class ExportParticipantInfoPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Export Participant Info", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.deepOrange,
-        iconTheme: const IconThemeData(color: Colors.white),
-      ),
-      body: const Center(
-        child: Text(
-          "Export Participant Info functionality will go here!",
-          style: TextStyle(fontSize: 22, color: Colors.deepOrange),
-        ),
-      ),
-      backgroundColor: Colors.orange[50],
-    );
-  }
-}
-
-// get_participant_info_page.dart
-class GetParticipantInfoPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Get Participant Info", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.deepOrange,
-        iconTheme: const IconThemeData(color: Colors.white),
-      ),
-      body: const Center(
-        child: Text(
-          "Get Participant Info functionality will go here!",
-          style: TextStyle(fontSize: 22, color: Colors.deepOrange),
-        ),
-      ),
-      backgroundColor: Colors.orange[50],
     );
   }
 }

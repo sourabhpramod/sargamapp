@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.example.sargamapp"
-    compileSdk = 34 // Explicit version instead of flutter.compileSdkVersion
+    compileSdk = 35 // Explicit version instead of flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
     compileOptions {
